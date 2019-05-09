@@ -1,0 +1,29 @@
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+
+  input {
+    font-size: 20px;
+    font-family: Times;
+    display: flex;
+    text-align: center;
+    outline: none;
+    padding: 5px 0;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: border-bottom-color 300ms;
+    background-color: transparent;
+
+    &:focus {
+      border-bottom-color: black;
+    }
+
+    &:hover {
+      border-bottom-color: black;
+    }
+  }
+}
+

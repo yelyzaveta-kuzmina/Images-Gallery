@@ -1,0 +1,62 @@
+.imagesGallery {
+  width: 600px;
+  margin: 0 auto;
+
+  .mainView {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .leftButton,
+  .rightButton {
+    width: 50px;
+    border: none;
+    outline: none;
+    background: #232024;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+
+    &:hover {
+      background: lighten(#232024, 5%);
+    }
+  }
+}
+
+.imagesList {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .imageThumbnail {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+
+    &:hover { 
+      outline: 2px solid #232024; 
+    } 
+
+    &.active {
+      outline: 2px solid #232024;
+    }
+  }
+
+  .imageThumbnail ~ .imageThumbnail {
+    margin-left: 10px;
+    display: flex;
+    align-self: center;
+  }
+}
